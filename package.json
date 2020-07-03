@@ -1,0 +1,29 @@
+{
+  "name": "discord-backup",
+  "version": "0.0.1",
+  "description": "Discord server backup bot.",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjdgustn/discord-backup.git"
+  },
+  "author": "Hyonsu",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/wjdgustn/discord-backup/issues"
+  },
+  "homepage": "https://github.com/wjdgustn/discord-backup#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "uuid": "^8.2.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "backup/*",
+      "data/*"
+    ]
+  }
+}

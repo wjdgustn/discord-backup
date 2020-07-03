@@ -1,0 +1,9 @@
+{
+  "BOT_TOKEN" : "YOUR_DISCORD_BOT_TOKEN",
+
+  "MAX_BACKUP" : 3,
+  "TESTMODE" : false,
+  "TESTER" : [
+    "TESTER_ID"
+  ]
+}
