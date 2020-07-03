@@ -61,6 +61,11 @@ client.on('message', (message) => {
             return;
         }
 
+        if(!message.member.hasPermission("ADMINISTRATOR")) {
+            message.channel.send(`권한이 없습니다.\n서버에서 "관리자" 권한을 가지고 있어야 합니다.`);
+            return;
+        }
+
         let backup_list = JSON.parse(fs.readFileSync('./data/user/backup-list.json'));
 
         if(backup_list[message.author.id] != null && backup_list[message.author.id].length >= setting.MAX_BACKUP) {
